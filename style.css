@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 62.5%;
+    --elementes: #fff;
+    --background: #fafafa;
+    --texts: #111517;
+    --input: #111517;
+}
+
+body.dark{
+    --elementes: #2b3945;
+    --background: #202c37;
+    --texts: #fff;
+    --input: #fff;
+}
+
+body{
+        font-size: 1.6rem;
+        background: var(--background);
+        color: var(--texts)
+}
+
+header{
+    background: var(--elementes);
+    box-shadow: 8px 2px 4px rgba(0, 0, 0, 0.0562443);
+    padding-block: 2.4rem;
+    margin-bottom: 4.8rem;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 128rem;
+    margin-inline: auto;
+}
+
+header h1{
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+
+header button{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: none;
+    border: none;
+    color: var(--texts);
+    cursor: pointer;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+
+main{
+    margin-bottom: 4.8rem;
+}
+
+.filtros{
+    max-width: 128rem;
+    margin-inline: auto;
+    margin-bottom: 4.8rem;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+form div{
+    background: var(--elementes);
+    width: 48rem;
+    padding: 1.8rem 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    border-radius: 5px;
+    box-shadow: 8px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+form div input{
+    border: 0;
+    background: none;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    outline: none;
+    width: 100%;
+    color: var(--input);
+}
+
+form div input::placeholder{
+    color: var(--input);
+    opacity: 0.5;
+}
+
+form select{
+    padding: 1.8rem 2.4rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    outline: none;
+    background: var(--elementes);
+    color: var(--texts);
+    border: 0;
+}
+
+.cards-paises{
+    max-width: 128rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.4rem;
+}
+
+.card{
+    background: var(--elementes);
+    max-width: 26.4rem;
+    box-shadow: 8px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card div{
+    padding: 2.4rem;
+}
+
+.card h2{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.card p{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.card strong{
+    font-weight: 600;
+}
